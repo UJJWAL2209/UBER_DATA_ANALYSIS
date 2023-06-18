@@ -1,13 +1,22 @@
-This project is built for an academic project exhibition with the community in mind.
-The project is built based on the concept of the Travelling Salesman Problem. We are making our project to optimize the travel path taken by Covid personnel for visiting various houses in a locality. We have implemented Genetic Algorithm to find the optimum path solution and then have displayed the output as an HTML file which displays the map of the locality and traces the path to be taken for visiting the houses. The visiting sequence is also altered based on the rank given to the houses as per the comfortable visit time.
+# Visualization of Uber Pickup Data in Bhopal, Madhya Pradesh
+Sometimes it’s easy to give up on someone else’s driving. This is less stress, more mental space and one uses that time to do other things. Yes, that’s one of the ideas that grew and later became the idea behind Uber. With its 93 million monthly active users and _3.9 million_ active drivers, Uber completes _18.7 million rides_ each day globally. If seen the right way, this is a large amount of data which could be processed to extract some really useful information.
 
-Genetic Algorithm(GA)
-For implementing the GA a population of 500 house visit order is considered and a fitness score is assigned to all the members of the population as per their travel distance for that particular order. A new generation is then created, with the fitness score in consideration, at random with the population members' having better fitness sore to have higher chances at being in the mating pool for creating a new population. A mutations of a certain rate is also caused to happen while making new generation to aid our aim of finding an optimum solution of our problem. This process is continued for 100 generations. Then for another 100 generations, the program is executed to check if any change occurs in the all time best solution obtained from the past 100 generations. If there is no change in the all time best solution, then considering this all-time best solution to be the truly most optimum solution for our considered dataset, else we repeat the process for the next 100 generations till our goal of no change in optimum route over 100 generations is obtained.
+Just with the data in hand, one can easily resolve problems like peak traffic time and heavy traffic areas around oneself. This could not only help with the Road Traffic Control but also help the people to choose which route to take or which hour they should head out as per their convenience. Using the data, we can visualize and find patterns which can be helpful for providing real-time information as well as making some predictions.  
 
-Bibliography
-We were able to make this project only because of the guidance provided by Dr. Rakesh R., a professor of VIT, Bhopal(at present).
-Sources used for this project are the video tutorial series of
+Visualizing the Uber data can be greatly helpful for both the users and company itself. The project focuses on answering questions such as which hour of the day is most busy or which place has the least pickups or any possible information that could be extracted from the pick-up and drop-off data.
 
-Travelling salesman in youtube, and
-Genetic Algorithm
-both from The coding train.
+Talking about our Uber data analysis project, data storytelling is an important component of machine learning through which companies are able to understand the background of various operations. With the help of visualization, companies can avail the benefit of understanding the complex data and gain insights that would help them to craft decisions. We applied the same for the Uber pickup data, for a city in India. Taking the reference of an already available Uber pickup dataset, we created one for the city of Bhopal and implemented the data visualization techniques to find some patterns that could help in any way possible.
+
+----
+## Working
+Our work is to first analyse the number of uber pickups in a month and its density and then visualize it using [_streamlit_](https://streamlit.io/), [_pydeck_](https://pydeck.gl/) and [_altair_](https://altair-viz.github.io/).  
+Our main goal is to analyse the busiest routes at different time of the day and the variation in the number of pickups at certain important landmarks such as __Raja Bhoj Airport__, __Rani Kamlapati Railway Station__ and __Bhopal Junction Railway Station__. 
+
+----
+## Output
+![output](./image/output.png)
+After creating the dataset for Indian city and using data analytics and visualization methods to extract some useful information from that raw data, we can conclude that the real-life implementation of the same could help making Uber cabs more accessible to the customer.
+
+----
+## Bibliography
+We were able to successfully complete the project because of the guidance provided by Dr. Rakesh R.
